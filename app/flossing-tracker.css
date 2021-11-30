@@ -1,0 +1,32 @@
+html,body{
+    height: 100%;
+    margin: 0px; padding: 0px;
+    font-family: 'Helvetica Neue';
+    font-weight: 200;
+}
+
+
+.tracker-holder{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color:blue;
+
+}
+.tracker{
+    height: 100%;
+    flex-grow: 1;
+    width: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+.tracker h2{
+    bottom:0px;
+    position: absolute;
+    text-align: center;
+    color:white;
+    width: 100%;
+    font-size: 2.5em;
+    font-weight: 300;
+}

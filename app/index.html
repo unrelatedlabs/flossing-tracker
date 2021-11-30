@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="FlossingTrackerApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flossign Tracker</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="format-detection" content="telephone=no" />
+
+    <script src="bundle.js"></script>
+
+    <link rel="stylesheet" href="flossing-tracker.css">
+
+
+</head>
+<body>
+    <div ng-controller="MainController" class="tracker-holder">
+        <div ng-click="tap(tracker)" class="tracker" ng-repeat="tracker in trackers" ng-style="tracker.style">
+            <h2>{{tracker.name}}</h2>
+        </div>
+    </div>
+</body>
+</html>
